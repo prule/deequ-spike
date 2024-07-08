@@ -24,4 +24,4 @@ junit-v4-v13-v2-v13 = { module = "org.scalatestplus:junit-4-13_2.13", version.re
 deequ = { module = "com.amazon.deequ:deequ", version.ref = "deequ" }
 
 [plugins]
-jvm = { id = "org.jetbrains.kotlin.jvm", version = "1.9.22" }
+jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.0.0" }
