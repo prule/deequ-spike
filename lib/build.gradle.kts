@@ -19,11 +19,8 @@ repositories {
 }
 
 dependencies {
-    // Use Scala 2.13 in our library project
-//    api(libs.scala.library)
+    // deequ will bring in scala and spark
     api(libs.deequ)
-
-    api(libs.guava)
 
     // Use Scalatest for testing our library
     testImplementation(libs.junit)
@@ -33,8 +30,6 @@ dependencies {
     // Need scala-xml at test runtime
 //    testRuntimeOnly(libs.scala.xml.v2.v13)
 
-    // This dependency is exported to consumers, that is to say found on their compile classpath.
-    api(libs.commons.math3)
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
