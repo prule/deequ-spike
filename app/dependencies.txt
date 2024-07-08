@@ -12,7 +12,7 @@ api - API dependencies for null/main (n)
 No dependencies
 
 apiDependenciesMetadata
-\--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
+\--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
 
 apiElements - API elements for the 'main' feature. (n)
 No dependencies
@@ -21,7 +21,7 @@ apiElements-published (n)
 No dependencies
 
 compileClasspath - Compile classpath for null/main.
-+--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
++--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
 |    \--- org.jetbrains:annotations:13.0 -> 17.0.0
 \--- project :lib
      \--- com.amazon.deequ:deequ:2.0.7-spark-3.5
@@ -442,11 +442,15 @@ No dependencies
 default - Configuration for default artifacts. (n)
 No dependencies
 
+dependencySources
++--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
+\--- project :lib FAILED
+
 implementation - Implementation only dependencies for null/main. (n)
 \--- project lib (n)
 
 implementationDependenciesMetadata
-+--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
++--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
 \--- project :lib
      \--- com.amazon.deequ:deequ:2.0.7-spark-3.5
           +--- org.scala-lang:scala-library:2.12.10 -> 2.12.18
@@ -861,75 +865,90 @@ intransitiveDependenciesMetadata
 No dependencies
 
 kotlinBuildToolsApiClasspath
-\--- org.jetbrains.kotlin:kotlin-build-tools-impl:1.9.22
-     +--- org.jetbrains.kotlin:kotlin-build-tools-api:1.9.22
-     +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
+\--- org.jetbrains.kotlin:kotlin-build-tools-impl:{strictly 2.0.0} -> 2.0.0
+     +--- org.jetbrains.kotlin:kotlin-build-tools-api:2.0.0
+     +--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
      |    \--- org.jetbrains:annotations:13.0
-     +--- org.jetbrains.kotlin:kotlin-compiler-embeddable:1.9.22
-     |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 (*)
-     |    +--- org.jetbrains.kotlin:kotlin-script-runtime:1.9.22
+     +--- org.jetbrains.kotlin:kotlin-compiler-embeddable:2.0.0
+     |    +--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
+     |    +--- org.jetbrains.kotlin:kotlin-script-runtime:2.0.0
      |    +--- org.jetbrains.kotlin:kotlin-reflect:1.6.10
-     |    +--- org.jetbrains.kotlin:kotlin-daemon-embeddable:1.9.22
+     |    +--- org.jetbrains.kotlin:kotlin-daemon-embeddable:2.0.0
      |    \--- org.jetbrains.intellij.deps:trove4j:1.0.20200330
-     \--- org.jetbrains.kotlin:kotlin-compiler-runner:1.9.22
-          +--- org.jetbrains.kotlin:kotlin-build-common:1.9.22
-          +--- org.jetbrains.kotlin:kotlin-daemon-client:1.9.22
-          +--- org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.0
-          \--- org.jetbrains.kotlin:kotlin-compiler-embeddable:1.9.22 (*)
+     +--- org.jetbrains.kotlin:kotlin-compiler-runner:2.0.0
+     |    +--- org.jetbrains.kotlin:kotlin-build-common:2.0.0
+     |    +--- org.jetbrains.kotlin:kotlin-daemon-client:2.0.0
+     |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
+     |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.0
+     |    \--- org.jetbrains.kotlin:kotlin-compiler-embeddable:2.0.0 (*)
+     +--- org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable:2.0.0
+     |    +--- org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable:2.0.0
+     |    |    +--- org.jetbrains.kotlin:kotlin-scripting-common:2.0.0
+     |    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
+     |    |    +--- org.jetbrains.kotlin:kotlin-scripting-jvm:2.0.0
+     |    |    |    +--- org.jetbrains.kotlin:kotlin-script-runtime:2.0.0
+     |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
+     |    |    |    \--- org.jetbrains.kotlin:kotlin-scripting-common:2.0.0 (*)
+     |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
+     |    \--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
+     \--- org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable:2.0.0 (*)
 
 kotlinCompilerClasspath
-\--- org.jetbrains.kotlin:kotlin-compiler-embeddable:1.9.22
-     +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
+\--- org.jetbrains.kotlin:kotlin-compiler-embeddable:2.0.0
+     +--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
      |    \--- org.jetbrains:annotations:13.0
-     +--- org.jetbrains.kotlin:kotlin-script-runtime:1.9.22
+     +--- org.jetbrains.kotlin:kotlin-script-runtime:2.0.0
      +--- org.jetbrains.kotlin:kotlin-reflect:1.6.10
-     +--- org.jetbrains.kotlin:kotlin-daemon-embeddable:1.9.22
+     +--- org.jetbrains.kotlin:kotlin-daemon-embeddable:2.0.0
      \--- org.jetbrains.intellij.deps:trove4j:1.0.20200330
 
 kotlinCompilerPluginClasspath
 No dependencies
 
 kotlinCompilerPluginClasspathMain - Kotlin compiler plugins for compilation
-\--- org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable:1.9.22
-     +--- org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable:1.9.22
-     |    +--- org.jetbrains.kotlin:kotlin-scripting-common:1.9.22
-     |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
+\--- org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable:2.0.0
+     +--- org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable:2.0.0
+     |    +--- org.jetbrains.kotlin:kotlin-scripting-common:2.0.0
+     |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
      |    |         \--- org.jetbrains:annotations:13.0
-     |    +--- org.jetbrains.kotlin:kotlin-scripting-jvm:1.9.22
-     |    |    +--- org.jetbrains.kotlin:kotlin-script-runtime:1.9.22
-     |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 (*)
-     |    |    \--- org.jetbrains.kotlin:kotlin-scripting-common:1.9.22 (*)
-     |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 (*)
-     \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 (*)
+     |    +--- org.jetbrains.kotlin:kotlin-scripting-jvm:2.0.0
+     |    |    +--- org.jetbrains.kotlin:kotlin-script-runtime:2.0.0
+     |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
+     |    |    \--- org.jetbrains.kotlin:kotlin-scripting-common:2.0.0 (*)
+     |    \--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
+     \--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
 
 kotlinCompilerPluginClasspathTest - Kotlin compiler plugins for compilation
-\--- org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable:1.9.22
-     +--- org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable:1.9.22
-     |    +--- org.jetbrains.kotlin:kotlin-scripting-common:1.9.22
-     |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
+\--- org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable:2.0.0
+     +--- org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable:2.0.0
+     |    +--- org.jetbrains.kotlin:kotlin-scripting-common:2.0.0
+     |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
      |    |         \--- org.jetbrains:annotations:13.0
-     |    +--- org.jetbrains.kotlin:kotlin-scripting-jvm:1.9.22
-     |    |    +--- org.jetbrains.kotlin:kotlin-script-runtime:1.9.22
-     |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 (*)
-     |    |    \--- org.jetbrains.kotlin:kotlin-scripting-common:1.9.22 (*)
-     |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 (*)
-     \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 (*)
+     |    +--- org.jetbrains.kotlin:kotlin-scripting-jvm:2.0.0
+     |    |    +--- org.jetbrains.kotlin:kotlin-script-runtime:2.0.0
+     |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
+     |    |    \--- org.jetbrains.kotlin:kotlin-scripting-common:2.0.0 (*)
+     |    \--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
+     \--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
 
 kotlinKlibCommonizerClasspath
-\--- org.jetbrains.kotlin:kotlin-klib-commonizer-embeddable:1.9.22
-     +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
+\--- org.jetbrains.kotlin:kotlin-klib-commonizer-embeddable:2.0.0
+     +--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
      |    \--- org.jetbrains:annotations:13.0
-     \--- org.jetbrains.kotlin:kotlin-compiler-embeddable:1.9.22
-          +--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 (*)
-          +--- org.jetbrains.kotlin:kotlin-script-runtime:1.9.22
+     \--- org.jetbrains.kotlin:kotlin-compiler-embeddable:2.0.0
+          +--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
+          +--- org.jetbrains.kotlin:kotlin-script-runtime:2.0.0
           +--- org.jetbrains.kotlin:kotlin-reflect:1.6.10
-          +--- org.jetbrains.kotlin:kotlin-daemon-embeddable:1.9.22
+          +--- org.jetbrains.kotlin:kotlin-daemon-embeddable:2.0.0
           \--- org.jetbrains.intellij.deps:trove4j:1.0.20200330
+
+kotlinNativeBundleConfiguration
+\--- org.jetbrains.kotlin:kotlin-native-prebuilt:2.0.0
 
 kotlinNativeCompilerPluginClasspath
 No dependencies
 
-kotlinScriptDef - Script filename extensions discovery classpath configuration
+kotlinScriptDef - Script filename extensions discovery classpath configuration (n)
 No dependencies
 
 kotlinScriptDefExtensions
@@ -939,7 +958,7 @@ mainSourceElements - List of source directories contained in the Main SourceSet.
 No dependencies
 
 runtimeClasspath - Runtime classpath of null/main.
-+--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
++--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
 |    \--- org.jetbrains:annotations:13.0 -> 17.0.0
 \--- project :lib
      \--- com.amazon.deequ:deequ:2.0.7-spark-3.5
@@ -1380,7 +1399,7 @@ testApiDependenciesMetadata
 No dependencies
 
 testCompileClasspath - Compile classpath for null/test.
-+--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
++--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
 |    \--- org.jetbrains:annotations:13.0 -> 17.0.0
 +--- project :lib
 |    \--- com.amazon.deequ:deequ:2.0.7-spark-3.5
@@ -1791,10 +1810,10 @@ testCompileClasspath - Compile classpath for null/test.
 |         |    +--- dev.ludovic.netlib:lapack:3.0.3 (*)
 |         |    \--- dev.ludovic.netlib:arpack:3.0.3 (*)
 |         \--- org.scalanlp:breeze_2.12:2.1.0 (*)
-+--- org.jetbrains.kotlin:kotlin-test-junit5:1.9.22
-|    +--- org.jetbrains.kotlin:kotlin-test:1.9.22
-|    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 (*)
-|    \--- org.junit.jupiter:junit-jupiter-api:5.6.3 -> 5.10.2
++--- org.jetbrains.kotlin:kotlin-test-junit5:2.0.0
+|    +--- org.jetbrains.kotlin:kotlin-test:2.0.0
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
+|    \--- org.junit.jupiter:junit-jupiter-api:5.10.1 -> 5.10.2
 |         +--- org.junit:junit-bom:5.10.2
 |         |    +--- org.junit.jupiter:junit-jupiter-api:5.10.2 (c)
 |         |    +--- org.junit.jupiter:junit-jupiter-engine:5.10.2 (c)
@@ -1821,12 +1840,18 @@ No dependencies
 testCompileOnlyDependenciesMetadata
 No dependencies
 
+testDependencySources
++--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
++--- project :lib FAILED
++--- org.jetbrains.kotlin:kotlin-test-junit5:2.0.0
+\--- org.junit.jupiter:junit-jupiter-engine:5.10.2
+
 testImplementation - Implementation only dependencies for null/test. (n)
 +--- org.jetbrains.kotlin:kotlin-test-junit5 (n)
 \--- org.junit.jupiter:junit-jupiter-engine:5.10.2 (n)
 
 testImplementationDependenciesMetadata
-+--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
++--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
 +--- project :lib
 |    \--- com.amazon.deequ:deequ:2.0.7-spark-3.5
 |         +--- org.scala-lang:scala-library:2.12.10 -> 2.12.18
@@ -2236,13 +2261,10 @@ testImplementationDependenciesMetadata
 |         |    +--- dev.ludovic.netlib:lapack:3.0.3 (*)
 |         |    \--- dev.ludovic.netlib:arpack:3.0.3 (*)
 |         \--- org.scalanlp:breeze_2.12:2.1.0 (*)
-+--- org.jetbrains.kotlin:kotlin-test-junit5:1.9.22
-|    +--- org.jetbrains.kotlin:kotlin-test:1.9.22
-|    |    +--- org.jetbrains.kotlin:kotlin-test-common:1.9.22
-|    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
-|    |    \--- org.jetbrains.kotlin:kotlin-test-annotations-common:1.9.22
-|    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
-|    \--- org.junit.jupiter:junit-jupiter-api:5.6.3 -> 5.10.2
++--- org.jetbrains.kotlin:kotlin-test-junit5:2.0.0
+|    +--- org.jetbrains.kotlin:kotlin-test:2.0.0
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
+|    \--- org.junit.jupiter:junit-jupiter-api:5.10.1 -> 5.10.2
 |         +--- org.junit:junit-bom:5.10.2
 |         |    +--- org.junit.jupiter:junit-jupiter-api:5.10.2 (c)
 |         |    +--- org.junit.jupiter:junit-jupiter-engine:5.10.2 (c)
@@ -2266,14 +2288,14 @@ testImplementationDependenciesMetadata
 testIntransitiveDependenciesMetadata
 No dependencies
 
-testKotlinScriptDef - Script filename extensions discovery classpath configuration
+testKotlinScriptDef - Script filename extensions discovery classpath configuration (n)
 No dependencies
 
 testKotlinScriptDefExtensions
 No dependencies
 
 testRuntimeClasspath - Runtime classpath of null/test.
-+--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22
++--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0
 |    \--- org.jetbrains:annotations:13.0 -> 17.0.0
 +--- project :lib
 |    \--- com.amazon.deequ:deequ:2.0.7-spark-3.5
@@ -2694,8 +2716,10 @@ testRuntimeClasspath - Runtime classpath of null/test.
 |         |    +--- dev.ludovic.netlib:lapack:3.0.3 (*)
 |         |    \--- dev.ludovic.netlib:arpack:3.0.3 (*)
 |         \--- org.scalanlp:breeze_2.12:2.1.0 (*)
-+--- org.jetbrains.kotlin:kotlin-test-junit5:1.9.22
-|    +--- org.junit.jupiter:junit-jupiter-engine:5.6.3 -> 5.10.2
++--- org.jetbrains.kotlin:kotlin-test-junit5:2.0.0
+|    +--- org.jetbrains.kotlin:kotlin-test:2.0.0
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib:2.0.0 (*)
+|    +--- org.junit.jupiter:junit-jupiter-engine:5.10.1 -> 5.10.2
 |    |    +--- org.junit:junit-bom:5.10.2
 |    |    |    +--- org.junit.jupiter:junit-jupiter-api:5.10.2 (c)
 |    |    |    +--- org.junit.jupiter:junit-jupiter-engine:5.10.2 (c)
@@ -2711,13 +2735,11 @@ testRuntimeClasspath - Runtime classpath of null/test.
 |    |         +--- org.junit:junit-bom:5.10.2 (*)
 |    |         +--- org.opentest4j:opentest4j:1.3.0
 |    |         \--- org.junit.platform:junit-platform-commons:1.10.2 (*)
-|    +--- org.jetbrains.kotlin:kotlin-test:1.9.22
-|    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.9.22 (*)
-|    \--- org.junit.jupiter:junit-jupiter-api:5.6.3 -> 5.10.2 (*)
+|    \--- org.junit.platform:junit-platform-launcher:1.10.1 -> 1.10.2
+|         +--- org.junit:junit-bom:5.10.2 (*)
+|         \--- org.junit.platform:junit-platform-engine:1.10.2 (*)
 +--- org.junit.jupiter:junit-jupiter-engine:5.10.2 (*)
-\--- org.junit.platform:junit-platform-launcher -> 1.10.2
-     +--- org.junit:junit-bom:5.10.2 (*)
-     \--- org.junit.platform:junit-platform-engine:1.10.2 (*)
+\--- org.junit.platform:junit-platform-launcher -> 1.10.2 (*)
 
 testRuntimeOnly - Runtime only dependencies for null/test. (n)
 \--- org.junit.platform:junit-platform-launcher (n)
@@ -2729,5 +2751,5 @@ testRuntimeOnly - Runtime only dependencies for null/test. (n)
 
 A web-based, searchable dependency report is available by adding the --scan option.
 
-BUILD SUCCESSFUL in 1s
+BUILD SUCCESSFUL in 756ms
 1 actionable task: 1 executed

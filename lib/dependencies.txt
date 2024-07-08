@@ -1836,5 +1836,5 @@ zinc - The Zinc incremental compiler to be used for this Scala project.
 
 A web-based, searchable dependency report is available by adding the --scan option.
 
-BUILD SUCCESSFUL in 419ms
+BUILD SUCCESSFUL in 429ms
 1 actionable task: 1 executed
