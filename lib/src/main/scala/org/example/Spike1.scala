@@ -15,7 +15,7 @@ class Spike1 {
   }
 
   ExampleUtils.withSpark { session =>
-    println("Spark in the house")
+    println(s"Spark version: ${session.version}")
 
     val data = itemsAsDataframe(session,
       Item(1, "Thingy A", "awesome thing.", "high", 0),
