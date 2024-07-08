@@ -33,9 +33,9 @@ class Spike1 {
       .addCheck(
         Check(CheckLevel.Error, "integrity checks")
           // we expect 5 records
-          .hasSize(_ == 5)
+          .hasSize(_ == 6)
           // we expect the maximum of tips to be not more than 10
-          .hasMax("numViews", _ <= 10)
+          .hasMax("numViews", _ <= 8)
           // we expect the sketch size to be at least 16
           .kllSketchSatisfies("numViews", _.parameters(1) >= 16,
             kllParameters = Option(KLLParameters(2, 0.64, 2)))
