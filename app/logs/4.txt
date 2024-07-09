@@ -1,0 +1,847 @@
+10:53:11 pm: Executing 'run'...
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :lib:compileJava NO-SOURCE
+> Task :lib:compileScala UP-TO-DATE
+> Task :app:compileKotlin UP-TO-DATE
+> Task :app:compileJava NO-SOURCE
+> Task :app:processResources NO-SOURCE
+> Task :app:classes UP-TO-DATE
+> Task :lib:processResources NO-SOURCE
+> Task :lib:classes UP-TO-DATE
+> Task :lib:jar UP-TO-DATE
+
+> Task :app:run
+
+----------------------------------------------
+Java version: 21.0.3
+Kotlin version: 2.0.0
+Scala version: version 2.12.18
+----------------------------------------------
+
+Hello World!
+true
+Spark version: 3.5.0
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+24/07/09 22:53:12 INFO SparkContext: Running Spark version 3.5.0
+24/07/09 22:53:12 INFO SparkContext: OS info Mac OS X, 14.5, aarch64
+24/07/09 22:53:12 INFO SparkContext: Java version 21.0.3
+24/07/09 22:53:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/07/09 22:53:12 INFO ResourceUtils: ==============================================================
+24/07/09 22:53:12 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/07/09 22:53:12 INFO ResourceUtils: ==============================================================
+24/07/09 22:53:12 INFO SparkContext: Submitted application: test
+24/07/09 22:53:12 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/07/09 22:53:12 INFO ResourceProfile: Limiting resource is cpu
+24/07/09 22:53:12 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/07/09 22:53:12 INFO SecurityManager: Changing view acls to: paulrule
+24/07/09 22:53:12 INFO SecurityManager: Changing modify acls to: paulrule
+24/07/09 22:53:12 INFO SecurityManager: Changing view acls groups to:
+24/07/09 22:53:12 INFO SecurityManager: Changing modify acls groups to:
+24/07/09 22:53:12 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: paulrule; groups with view permissions: EMPTY; users with modify permissions: paulrule; groups with modify permissions: EMPTY
+24/07/09 22:53:13 INFO Utils: Successfully started service 'sparkDriver' on port 61699.
+24/07/09 22:53:13 INFO SparkEnv: Registering MapOutputTracker
+24/07/09 22:53:13 INFO SparkEnv: Registering BlockManagerMaster
+24/07/09 22:53:13 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/07/09 22:53:13 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/07/09 22:53:13 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/07/09 22:53:13 INFO DiskBlockManager: Created local directory at /private/var/folders/5h/vkqskygs6xqgldrbd4nfgzjc0000gn/T/blockmgr-53bdd4ca-3dfc-45a4-afb1-6f9aaa1c2542
+24/07/09 22:53:13 INFO MemoryStore: MemoryStore started with capacity 3.4 GiB
+24/07/09 22:53:13 INFO SparkEnv: Registering OutputCommitCoordinator
+24/07/09 22:53:13 INFO Executor: Starting executor ID driver on host 192-168-1-168.tpgi.com.au
+24/07/09 22:53:13 INFO Executor: OS info Mac OS X, 14.5, aarch64
+24/07/09 22:53:13 INFO Executor: Java version 21.0.3
+24/07/09 22:53:13 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/07/09 22:53:13 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@7e5843db for default.
+24/07/09 22:53:13 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 61700.
+24/07/09 22:53:13 INFO NettyBlockTransferService: Server created on 192-168-1-168.tpgi.com.au:61700
+24/07/09 22:53:13 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/07/09 22:53:13 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192-168-1-168.tpgi.com.au, 61700, None)
+24/07/09 22:53:13 INFO BlockManagerMasterEndpoint: Registering block manager 192-168-1-168.tpgi.com.au:61700 with 3.4 GiB RAM, BlockManagerId(driver, 192-168-1-168.tpgi.com.au, 61700, None)
+24/07/09 22:53:13 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192-168-1-168.tpgi.com.au, 61700, None)
+24/07/09 22:53:13 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192-168-1-168.tpgi.com.au, 61700, None)
+24/07/09 22:53:13 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+24/07/09 22:53:13 INFO SharedState: Warehouse path is 'file:/Users/paulrule/IdeaProjects/kotlin-scala/kotlin/app/spark-warehouse'.
+24/07/09 22:53:14 INFO CodeGenerator: Code generated in 93.093 ms
+24/07/09 22:53:14 INFO SparkContext: Starting job: show at Spike1.scala:28
+24/07/09 22:53:14 INFO DAGScheduler: Got job 0 (show at Spike1.scala:28) with 1 output partitions
+24/07/09 22:53:14 INFO DAGScheduler: Final stage: ResultStage 0 (show at Spike1.scala:28)
+24/07/09 22:53:14 INFO DAGScheduler: Parents of final stage: List()
+24/07/09 22:53:14 INFO DAGScheduler: Missing parents: List()
+24/07/09 22:53:14 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at show at Spike1.scala:28), which has no missing parents
+24/07/09 22:53:14 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 16.5 KiB, free 3.4 GiB)
+24/07/09 22:53:14 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 6.3 KiB, free 3.4 GiB)
+24/07/09 22:53:14 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 192-168-1-168.tpgi.com.au:61700 (size: 6.3 KiB, free: 3.4 GiB)
+24/07/09 22:53:14 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1580
+24/07/09 22:53:14 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at show at Spike1.scala:28) (first 15 tasks are for partitions Vector(0))
+24/07/09 22:53:14 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+24/07/09 22:53:14 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (192-168-1-168.tpgi.com.au, executor driver, partition 0, PROCESS_LOCAL, 7968 bytes)
+24/07/09 22:53:14 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/07/09 22:53:14 INFO CodeGenerator: Code generated in 23.669541 ms
+24/07/09 22:53:14 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1763 bytes result sent to driver
+24/07/09 22:53:14 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 79 ms on 192-168-1-168.tpgi.com.au (executor driver) (1/1)
+24/07/09 22:53:14 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool
+24/07/09 22:53:14 INFO DAGScheduler: ResultStage 0 (show at Spike1.scala:28) finished in 0.240 s
+24/07/09 22:53:14 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+24/07/09 22:53:14 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+24/07/09 22:53:14 INFO DAGScheduler: Job 0 finished: show at Spike1.scala:28, took 0.257490 s
+24/07/09 22:53:14 INFO CodeGenerator: Code generated in 8.183292 ms
++---+-----------+--------------------+--------+--------+
+| id|productName|         description|priority|numViews|
++---+-----------+--------------------+--------+--------+
+|  1|   Thingy A|      awesome thing.|    high|       0|
+|  2|   Thingy B|available at http...|    NULL|       0|
+|  3|       NULL|                NULL|     low|       5|
+|  4|   Thingy D|checkout https://...|     low|      10|
+|  5|   Thingy E|                NULL|    high|       9|
++---+-----------+--------------------+--------+--------+
+
+24/07/09 22:53:14 INFO CodeGenerator: Code generated in 4.745833 ms
+24/07/09 22:53:15 INFO SparkContext: Starting job: treeReduce at KLLRunner.scala:107
+24/07/09 22:53:15 INFO DAGScheduler: Got job 1 (treeReduce at KLLRunner.scala:107) with 1 output partitions
+24/07/09 22:53:15 INFO DAGScheduler: Final stage: ResultStage 1 (treeReduce at KLLRunner.scala:107)
+24/07/09 22:53:15 INFO DAGScheduler: Parents of final stage: List()
+24/07/09 22:53:15 INFO DAGScheduler: Missing parents: List()
+24/07/09 22:53:15 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[11] at treeReduce at KLLRunner.scala:107), which has no missing parents
+24/07/09 22:53:15 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 28.2 KiB, free 3.4 GiB)
+24/07/09 22:53:15 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 12.6 KiB, free 3.4 GiB)
+24/07/09 22:53:15 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 192-168-1-168.tpgi.com.au:61700 (size: 12.6 KiB, free: 3.4 GiB)
+24/07/09 22:53:15 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1580
+24/07/09 22:53:15 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[11] at treeReduce at KLLRunner.scala:107) (first 15 tasks are for partitions Vector(0))
+24/07/09 22:53:15 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+24/07/09 22:53:15 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (192-168-1-168.tpgi.com.au, executor driver, partition 0, PROCESS_LOCAL, 7968 bytes)
+24/07/09 22:53:15 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+24/07/09 22:53:15 INFO CodeGenerator: Code generated in 5.135708 ms
+24/07/09 22:53:15 INFO CodeGenerator: Code generated in 3.353125 ms
+24/07/09 22:53:15 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2616 bytes result sent to driver
+24/07/09 22:53:15 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 33 ms on 192-168-1-168.tpgi.com.au (executor driver) (1/1)
+24/07/09 22:53:15 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool
+24/07/09 22:53:15 INFO DAGScheduler: ResultStage 1 (treeReduce at KLLRunner.scala:107) finished in 0.054 s
+24/07/09 22:53:15 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+24/07/09 22:53:15 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+24/07/09 22:53:15 INFO DAGScheduler: Job 1 finished: treeReduce at KLLRunner.scala:107, took 0.056021 s
+24/07/09 22:53:15 ERROR CodeGenerator: failed to compile: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 80, Column 1: Expression "hashAgg_isNull_9" is not an rvalue
+org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 80, Column 1: Expression "hashAgg_isNull_9" is not an rvalue
+	at org.codehaus.janino.UnitCompiler.compileError(UnitCompiler.java:13014)
+	at org.codehaus.janino.UnitCompiler.toRvalueOrCompileException(UnitCompiler.java:7894)
+	at org.codehaus.janino.UnitCompiler.compileContext2(UnitCompiler.java:4630)
+	at org.codehaus.janino.UnitCompiler.access$6900(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$15$1.visitAmbiguousName(UnitCompiler.java:4580)
+	at org.codehaus.janino.UnitCompiler$15$1.visitAmbiguousName(UnitCompiler.java:4579)
+	at org.codehaus.janino.Java$AmbiguousName.accept(Java.java:4603)
+	at org.codehaus.janino.UnitCompiler$15.visitLvalue(UnitCompiler.java:4579)
+	at org.codehaus.janino.UnitCompiler$15.visitLvalue(UnitCompiler.java:4575)
+	at org.codehaus.janino.Java$Lvalue.accept(Java.java:4528)
+	at org.codehaus.janino.UnitCompiler.compileContext(UnitCompiler.java:4575)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:4098)
+	at org.codehaus.janino.UnitCompiler.access$6300(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$13.visitAssignment(UnitCompiler.java:4057)
+	at org.codehaus.janino.UnitCompiler$13.visitAssignment(UnitCompiler.java:4040)
+	at org.codehaus.janino.Java$Assignment.accept(Java.java:4864)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:4040)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:2523)
+	at org.codehaus.janino.UnitCompiler.access$1800(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$6.visitExpressionStatement(UnitCompiler.java:1580)
+	at org.codehaus.janino.UnitCompiler$6.visitExpressionStatement(UnitCompiler.java:1575)
+	at org.codehaus.janino.Java$ExpressionStatement.accept(Java.java:3209)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:1575)
+	at org.codehaus.janino.UnitCompiler.compileStatements(UnitCompiler.java:1661)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:1646)
+	at org.codehaus.janino.UnitCompiler.access$1700(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$6.visitBlock(UnitCompiler.java:1579)
+	at org.codehaus.janino.UnitCompiler$6.visitBlock(UnitCompiler.java:1575)
+	at org.codehaus.janino.Java$Block.accept(Java.java:3115)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:1575)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:2630)
+	at org.codehaus.janino.UnitCompiler.access$1900(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$6.visitIfStatement(UnitCompiler.java:1581)
+	at org.codehaus.janino.UnitCompiler$6.visitIfStatement(UnitCompiler.java:1575)
+	at org.codehaus.janino.Java$IfStatement.accept(Java.java:3284)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:1575)
+	at org.codehaus.janino.UnitCompiler.compileStatements(UnitCompiler.java:1661)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:3658)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:3329)
+	at org.codehaus.janino.UnitCompiler.compileDeclaredMethods(UnitCompiler.java:1447)
+	at org.codehaus.janino.UnitCompiler.compileDeclaredMethods(UnitCompiler.java:1420)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:829)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:1026)
+	at org.codehaus.janino.UnitCompiler.access$700(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$3.visitMemberClassDeclaration(UnitCompiler.java:425)
+	at org.codehaus.janino.UnitCompiler$3.visitMemberClassDeclaration(UnitCompiler.java:418)
+	at org.codehaus.janino.Java$MemberClassDeclaration.accept(Java.java:1533)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:418)
+	at org.codehaus.janino.UnitCompiler.compileDeclaredMemberTypes(UnitCompiler.java:1397)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:864)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:442)
+	at org.codehaus.janino.UnitCompiler.access$400(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$3.visitPackageMemberClassDeclaration(UnitCompiler.java:422)
+	at org.codehaus.janino.UnitCompiler$3.visitPackageMemberClassDeclaration(UnitCompiler.java:418)
+	at org.codehaus.janino.Java$PackageMemberClassDeclaration.accept(Java.java:1688)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:418)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:392)
+	at org.codehaus.janino.UnitCompiler.access$000(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$2.visitCompilationUnit(UnitCompiler.java:363)
+	at org.codehaus.janino.UnitCompiler$2.visitCompilationUnit(UnitCompiler.java:361)
+	at org.codehaus.janino.Java$CompilationUnit.accept(Java.java:371)
+	at org.codehaus.janino.UnitCompiler.compileUnit(UnitCompiler.java:361)
+	at org.codehaus.janino.SimpleCompiler.cook(SimpleCompiler.java:264)
+	at org.codehaus.janino.ClassBodyEvaluator.cook(ClassBodyEvaluator.java:294)
+	at org.codehaus.janino.ClassBodyEvaluator.cook(ClassBodyEvaluator.java:288)
+	at org.codehaus.janino.ClassBodyEvaluator.cook(ClassBodyEvaluator.java:267)
+	at org.codehaus.commons.compiler.Cookable.cook(Cookable.java:82)
+	at org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator$.doCompile(CodeGenerator.scala:1497)
+	at org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator$.$anonfun$cache$1(CodeGenerator.scala:1589)
+	at org.apache.spark.util.NonFateSharingCache$$anon$1.load(NonFateSharingCache.scala:68)
+	at org.sparkproject.guava.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at org.sparkproject.guava.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at org.sparkproject.guava.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at org.sparkproject.guava.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	at org.sparkproject.guava.cache.LocalCache.get(LocalCache.java:4000)
+	at org.sparkproject.guava.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at org.sparkproject.guava.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at org.apache.spark.util.NonFateSharingLoadingCache.$anonfun$get$2(NonFateSharingCache.scala:94)
+	at org.apache.spark.util.KeyLock.withLock(KeyLock.scala:64)
+	at org.apache.spark.util.NonFateSharingLoadingCache.get(NonFateSharingCache.scala:94)
+	at org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator$.compile(CodeGenerator.scala:1444)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec.liftedTree1$1(WholeStageCodegenExec.scala:726)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec.doExecute(WholeStageCodegenExec.scala:725)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:195)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:246)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:243)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:191)
+	at org.apache.spark.sql.execution.exchange.ShuffleExchangeExec.inputRDD$lzycompute(ShuffleExchangeExec.scala:141)
+	at org.apache.spark.sql.execution.exchange.ShuffleExchangeExec.inputRDD(ShuffleExchangeExec.scala:141)
+	at org.apache.spark.sql.execution.exchange.ShuffleExchangeExec.mapOutputStatisticsFuture$lzycompute(ShuffleExchangeExec.scala:146)
+	at org.apache.spark.sql.execution.exchange.ShuffleExchangeExec.mapOutputStatisticsFuture(ShuffleExchangeExec.scala:145)
+	at org.apache.spark.sql.execution.exchange.ShuffleExchangeLike.$anonfun$submitShuffleJob$1(ShuffleExchangeExec.scala:73)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:246)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:243)
+	at org.apache.spark.sql.execution.exchange.ShuffleExchangeLike.submitShuffleJob(ShuffleExchangeExec.scala:73)
+	at org.apache.spark.sql.execution.exchange.ShuffleExchangeLike.submitShuffleJob$(ShuffleExchangeExec.scala:72)
+	at org.apache.spark.sql.execution.exchange.ShuffleExchangeExec.submitShuffleJob(ShuffleExchangeExec.scala:120)
+	at org.apache.spark.sql.execution.adaptive.ShuffleQueryStageExec.shuffleFuture$lzycompute(QueryStageExec.scala:187)
+	at org.apache.spark.sql.execution.adaptive.ShuffleQueryStageExec.shuffleFuture(QueryStageExec.scala:187)
+	at org.apache.spark.sql.execution.adaptive.ShuffleQueryStageExec.doMaterialize(QueryStageExec.scala:189)
+	at org.apache.spark.sql.execution.adaptive.QueryStageExec.materialize(QueryStageExec.scala:61)
+	at org.apache.spark.sql.execution.adaptive.AdaptiveSparkPlanExec.$anonfun$getFinalPhysicalPlan$5(AdaptiveSparkPlanExec.scala:286)
+	at org.apache.spark.sql.execution.adaptive.AdaptiveSparkPlanExec.$anonfun$getFinalPhysicalPlan$5$adapted(AdaptiveSparkPlanExec.scala:284)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at org.apache.spark.sql.execution.adaptive.AdaptiveSparkPlanExec.$anonfun$getFinalPhysicalPlan$1(AdaptiveSparkPlanExec.scala:284)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.adaptive.AdaptiveSparkPlanExec.getFinalPhysicalPlan(AdaptiveSparkPlanExec.scala:256)
+	at org.apache.spark.sql.execution.adaptive.AdaptiveSparkPlanExec.withFinalPlanUpdate(AdaptiveSparkPlanExec.scala:401)
+	at org.apache.spark.sql.execution.adaptive.AdaptiveSparkPlanExec.executeCollect(AdaptiveSparkPlanExec.scala:374)
+	at org.apache.spark.sql.Dataset.collectFromPlan(Dataset.scala:4344)
+	at org.apache.spark.sql.Dataset.$anonfun$collect$1(Dataset.scala:3585)
+	at org.apache.spark.sql.Dataset.$anonfun$withAction$2(Dataset.scala:4334)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:546)
+	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:4332)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:4332)
+	at org.apache.spark.sql.Dataset.collect(Dataset.scala:3585)
+	at com.amazon.deequ.analyzers.runners.AnalysisRunner$.liftedTree1$1(AnalysisRunner.scala:327)
+	at com.amazon.deequ.analyzers.runners.AnalysisRunner$.runScanningAnalyzers(AnalysisRunner.scala:320)
+	at com.amazon.deequ.analyzers.runners.AnalysisRunner$.doAnalysisRun(AnalysisRunner.scala:169)
+	at com.amazon.deequ.VerificationSuite.doVerificationRun(VerificationSuite.scala:121)
+	at com.amazon.deequ.VerificationRunBuilder.run(VerificationRunBuilder.scala:172)
+	at org.example.Spike1.$anonfun$new$1(Spike1.scala:41)
+	at org.example.Spike1.$anonfun$new$1$adapted(Spike1.scala:18)
+	at org.example.ExampleUtils$.withSpark(ExampleUtils.scala:34)
+	at org.example.Spike1.<init>(Spike1.scala:18)
+	at org.example.AppKt.main(App.kt:26)
+	at org.example.AppKt.main(App.kt)
+24/07/09 22:53:15 INFO CodeGenerator:
+/* 001 */ public Object generate(Object[] references) {
+/* 002 */   return new GeneratedIteratorForCodegenStage1(references);
+/* 003 */ }
+/* 004 */
+/* 005 */ // codegenStageId=1
+/* 006 */ final class GeneratedIteratorForCodegenStage1 extends org.apache.spark.sql.execution.BufferedRowIterator {
+/* 007 */   private Object[] references;
+/* 008 */   private scala.collection.Iterator[] inputs;
+/* 009 */   private boolean hashAgg_initAgg_0;
+/* 010 */   private boolean hashAgg_bufIsNull_0;
+/* 011 */   private long hashAgg_bufValue_0;
+/* 012 */   private boolean hashAgg_bufIsNull_1;
+/* 013 */   private double hashAgg_bufValue_1;
+/* 014 */   private scala.collection.Iterator inputadapter_input_0;
+/* 015 */   private boolean hashAgg_hashAgg_isNull_6_0;
+/* 016 */   private org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter[] serializefromobject_mutableStateArray_0 = new org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter[4];
+/* 017 */
+/* 018 */   public GeneratedIteratorForCodegenStage1(Object[] references) {
+/* 019 */     this.references = references;
+/* 020 */   }
+/* 021 */
+/* 022 */   public void init(int index, scala.collection.Iterator[] inputs) {
+/* 023 */     partitionIndex = index;
+/* 024 */     this.inputs = inputs;
+/* 025 */
+/* 026 */     inputadapter_input_0 = inputs[0];
+/* 027 */     serializefromobject_mutableStateArray_0[0] = new org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter(1, 0);
+/* 028 */     serializefromobject_mutableStateArray_0[1] = new org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter(1, 0);
+/* 029 */     serializefromobject_mutableStateArray_0[2] = new org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter(1, 0);
+/* 030 */     serializefromobject_mutableStateArray_0[3] = new org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter(2, 0);
+/* 031 */
+/* 032 */   }
+/* 033 */
+/* 034 */   private void hashAgg_doAggregateWithoutKey_0() throws java.io.IOException {
+/* 035 */     // initialize aggregation buffer
+/* 036 */     hashAgg_bufIsNull_0 = false;
+/* 037 */     hashAgg_bufValue_0 = 0L;
+/* 038 */     hashAgg_bufIsNull_1 = true;
+/* 039 */     hashAgg_bufValue_1 = -1.0;
+/* 040 */
+/* 041 */     while ( inputadapter_input_0.hasNext()) {
+/* 042 */       InternalRow inputadapter_row_0 = (InternalRow) inputadapter_input_0.next();
+/* 043 */
+/* 044 */       boolean inputadapter_isNull_0 = inputadapter_row_0.isNullAt(0);
+/* 045 */       org.example.Item inputadapter_value_0 = inputadapter_isNull_0 ?
+/* 046 */       null : ((org.example.Item)inputadapter_row_0.get(0, null));
+/* 047 */
+/* 048 */       serializefromobject_doConsume_0(inputadapter_row_0, inputadapter_value_0, inputadapter_isNull_0);
+/* 049 */       // shouldStop check is eliminated
+/* 050 */     }
+/* 051 */
+/* 052 */   }
+/* 053 */
+/* 054 */   private void hashAgg_doAggregate_max_0(double hashAgg_expr_0_0) throws java.io.IOException {
+/* 055 */     hashAgg_hashAgg_isNull_6_0 = true;
+/* 056 */     double hashAgg_value_6 = -1.0;
+/* 057 */
+/* 058 */     if (!hashAgg_bufIsNull_1 && (hashAgg_hashAgg_isNull_6_0 ||
+/* 059 */         (org.apache.spark.sql.catalyst.util.SQLOrderingUtil.compareDoubles(hashAgg_bufValue_1, hashAgg_value_6)) > 0)) {
+/* 060 */       hashAgg_hashAgg_isNull_6_0 = false;
+/* 061 */       hashAgg_value_6 = hashAgg_bufValue_1;
+/* 062 */     }
+/* 063 */
+/* 064 */     ArrayData hashAgg_arrayData_0 = ArrayData.allocateArrayData(
+/* 065 */       -1, 2L, " createArray failed.");
+/* 066 */
+/* 067 */     hashAgg_arrayData_0.update(0, ((UTF8String) references[1] /* literal */));
+/* 068 */
+/* 069 */     boolean hashAgg_isNull_12 = false;
+/* 070 */     UTF8String hashAgg_value_12 = null;
+/* 071 */     if (!false) {
+/* 072 */       hashAgg_value_12 = UTF8String.fromString(String.valueOf(hashAgg_expr_0_0));
+/* 073 */     }
+/* 074 */     hashAgg_arrayData_0.update(1, hashAgg_value_12);
+/* 075 */
+/* 076 */     UTF8String hashAgg_value_9 = null;
+/* 077 */
+/* 078 */     int hashAgg_elementAtIndex_0 = (int) 2;
+/* 079 */     if (hashAgg_arrayData_0.numElements() < Math.abs(hashAgg_elementAtIndex_0)) {
+/* 080 */       hashAgg_isNull_9 = true;
+/* 081 */     } else {
+/* 082 */       if (hashAgg_elementAtIndex_0 == 0) {
+/* 083 */         throw QueryExecutionErrors.invalidIndexOfZeroError(null);
+/* 084 */       } else if (hashAgg_elementAtIndex_0 > 0) {
+/* 085 */         hashAgg_elementAtIndex_0--;
+/* 086 */       } else {
+/* 087 */         hashAgg_elementAtIndex_0 += hashAgg_arrayData_0.numElements();
+/* 088 */       }
+/* 089 */
+/* 090 */       {
+/* 091 */         hashAgg_value_9 = hashAgg_arrayData_0.getUTF8String(hashAgg_elementAtIndex_0);
+/* 092 */       }
+/* 093 */     }
+/* 094 */     boolean hashAgg_isNull_8 = false;
+/* 095 */     double hashAgg_value_8 = -1.0;
+/* 096 */     if (!false) {
+/* 097 */       final String hashAgg_doubleStr_0 = hashAgg_value_9.toString();
+/* 098 */       try {
+/* 099 */         hashAgg_value_8 = Double.valueOf(hashAgg_doubleStr_0);
+/* 100 */       } catch (java.lang.NumberFormatException e) {
+/* 101 */         final Double d = (Double) Cast.processFloatingPointSpecialLiterals(hashAgg_doubleStr_0, false);
+/* 102 */         if (d == null) {
+/* 103 */           hashAgg_isNull_8 = true;
+/* 104 */         } else {
+/* 105 */           hashAgg_value_8 = d.doubleValue();
+/* 106 */         }
+/* 107 */       }
+/* 108 */     }
+/* 109 */
+/* 110 */     if (!hashAgg_isNull_8 && (hashAgg_hashAgg_isNull_6_0 ||
+/* 111 */         (org.apache.spark.sql.catalyst.util.SQLOrderingUtil.compareDoubles(hashAgg_value_8, hashAgg_value_6)) > 0)) {
+/* 112 */       hashAgg_hashAgg_isNull_6_0 = false;
+/* 113 */       hashAgg_value_6 = hashAgg_value_8;
+/* 114 */     }
+/* 115 */
+/* 116 */     hashAgg_bufIsNull_1 = hashAgg_hashAgg_isNull_6_0;
+/* 117 */     hashAgg_bufValue_1 = hashAgg_value_6;
+/* 118 */   }
+/* 119 */
+/* 120 */   private void hashAgg_doConsume_0(double hashAgg_expr_0_0) throws java.io.IOException {
+/* 121 */     // do aggregate
+/* 122 */     // common sub-expressions
+/* 123 */
+/* 124 */     // evaluate aggregate functions and update aggregation buffers
+/* 125 */     hashAgg_doAggregate_count_0();
+/* 126 */     hashAgg_doAggregate_max_0(hashAgg_expr_0_0);
+/* 127 */
+/* 128 */   }
+/* 129 */
+/* 130 */   private void hashAgg_doAggregate_count_0() throws java.io.IOException {
+/* 131 */     long hashAgg_value_3 = -1L;
+/* 132 */
+/* 133 */     hashAgg_value_3 = hashAgg_bufValue_0 + 1L;
+/* 134 */
+/* 135 */     hashAgg_bufIsNull_0 = false;
+/* 136 */     hashAgg_bufValue_0 = hashAgg_value_3;
+/* 137 */   }
+/* 138 */
+/* 139 */   private void serializefromobject_doConsume_0(InternalRow inputadapter_row_0, org.example.Item serializefromobject_expr_0_0, boolean serializefromobject_exprIsNull_0_0) throws java.io.IOException {
+/* 140 */     // common sub-expressions
+/* 141 */
+/* 142 */     if (serializefromobject_exprIsNull_0_0) {
+/* 143 */       throw new NullPointerException(((java.lang.String) references[0] /* errMsg */));
+/* 144 */     }
+/* 145 */     boolean serializefromobject_isNull_0 = true;
+/* 146 */     long serializefromobject_value_0 = -1L;
+/* 147 */     serializefromobject_isNull_0 = false;
+/* 148 */     if (!serializefromobject_isNull_0) {
+/* 149 */       serializefromobject_value_0 = serializefromobject_expr_0_0.numViews();
+/* 150 */     }
+/* 151 */     boolean project_isNull_0 = serializefromobject_isNull_0;
+/* 152 */     double project_value_0 = -1.0;
+/* 153 */     if (!serializefromobject_isNull_0) {
+/* 154 */       project_value_0 = (double) serializefromobject_value_0;
+/* 155 */     }
+/* 156 */
+/* 157 */     hashAgg_doConsume_0(project_value_0);
+/* 158 */
+/* 159 */   }
+/* 160 */
+/* 161 */   protected void processNext() throws java.io.IOException {
+/* 162 */     while (!hashAgg_initAgg_0) {
+/* 163 */       hashAgg_initAgg_0 = true;
+/* 164 */
+/* 165 */       long hashAgg_beforeAgg_0 = System.nanoTime();
+/* 166 */       hashAgg_doAggregateWithoutKey_0();
+/* 167 */       ((org.apache.spark.sql.execution.metric.SQLMetric) references[3] /* aggTime */).add((System.nanoTime() - hashAgg_beforeAgg_0) / 1000000);
+/* 168 */
+/* 169 */       // output the result
+/* 170 */
+/* 171 */       ((org.apache.spark.sql.execution.metric.SQLMetric) references[2] /* numOutputRows */).add(1);
+/* 172 */       serializefromobject_mutableStateArray_0[3].reset();
+/* 173 */
+/* 174 */       serializefromobject_mutableStateArray_0[3].zeroOutNullBytes();
+/* 175 */
+/* 176 */       serializefromobject_mutableStateArray_0[3].write(0, hashAgg_bufValue_0);
+/* 177 */
+/* 178 */       if (hashAgg_bufIsNull_1) {
+/* 179 */         serializefromobject_mutableStateArray_0[3].setNullAt(1);
+/* 180 */       } else {
+/* 181 */         serializefromobject_mutableStateArray_0[3].write(1, hashAgg_bufValue_1);
+/* 182 */       }
+/* 183 */       append((serializefromobject_mutableStateArray_0[3].getRow()));
+/* 184 */     }
+/* 185 */   }
+/* 186 */
+/* 187 */ }
+
+24/07/09 22:53:15 WARN WholeStageCodegenExec: Whole-stage codegen disabled for plan (id=1):
+ *(1) HashAggregate(keys=[], functions=[partial_count(1), partial_max(cast(element_at(array(InScopeData, cast(numViews#37 as string)), 2, None, false) as double))], output=[count#63L, max#64])
++- *(1) Project [cast(numViews#10L as double) AS numViews#37]
+   +- *(1) SerializeFromObject [knownnotnull(assertnotnull(input[0, org.example.Item, true])).numViews AS numViews#10L]
+      +- Scan[obj#5]
+
+24/07/09 22:53:15 INFO DAGScheduler: Registering RDD 16 (collect at AnalysisRunner.scala:327) as input to shuffle 0
+24/07/09 22:53:15 INFO DAGScheduler: Got map stage job 2 (collect at AnalysisRunner.scala:327) with 1 output partitions
+24/07/09 22:53:15 INFO DAGScheduler: Final stage: ShuffleMapStage 2 (collect at AnalysisRunner.scala:327)
+24/07/09 22:53:15 INFO DAGScheduler: Parents of final stage: List()
+24/07/09 22:53:15 INFO DAGScheduler: Missing parents: List()
+24/07/09 22:53:15 INFO DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[16] at collect at AnalysisRunner.scala:327), which has no missing parents
+24/07/09 22:53:15 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 192-168-1-168.tpgi.com.au:61700 in memory (size: 6.3 KiB, free: 3.4 GiB)
+24/07/09 22:53:15 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 192-168-1-168.tpgi.com.au:61700 in memory (size: 12.6 KiB, free: 3.4 GiB)
+24/07/09 22:53:15 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 28.6 KiB, free 3.4 GiB)
+24/07/09 22:53:15 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 13.4 KiB, free 3.4 GiB)
+24/07/09 22:53:15 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 192-168-1-168.tpgi.com.au:61700 (size: 13.4 KiB, free: 3.4 GiB)
+24/07/09 22:53:15 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1580
+24/07/09 22:53:15 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[16] at collect at AnalysisRunner.scala:327) (first 15 tasks are for partitions Vector(0))
+24/07/09 22:53:15 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+24/07/09 22:53:15 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2) (192-168-1-168.tpgi.com.au, executor driver, partition 0, PROCESS_LOCAL, 7957 bytes)
+24/07/09 22:53:15 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+24/07/09 22:53:15 INFO CodeGenerator: Code generated in 3.506334 ms
+24/07/09 22:53:15 INFO CodeGenerator: Code generated in 2.305833 ms
+24/07/09 22:53:15 INFO CodeGenerator: Code generated in 2.463791 ms
+24/07/09 22:53:15 ERROR CodeGenerator: failed to compile: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 102, Column 1: Expression "isNull_6" is not an rvalue
+org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 102, Column 1: Expression "isNull_6" is not an rvalue
+	at org.codehaus.janino.UnitCompiler.compileError(UnitCompiler.java:13014)
+	at org.codehaus.janino.UnitCompiler.toRvalueOrCompileException(UnitCompiler.java:7894)
+	at org.codehaus.janino.UnitCompiler.compileContext2(UnitCompiler.java:4630)
+	at org.codehaus.janino.UnitCompiler.access$6900(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$15$1.visitAmbiguousName(UnitCompiler.java:4580)
+	at org.codehaus.janino.UnitCompiler$15$1.visitAmbiguousName(UnitCompiler.java:4579)
+	at org.codehaus.janino.Java$AmbiguousName.accept(Java.java:4603)
+	at org.codehaus.janino.UnitCompiler$15.visitLvalue(UnitCompiler.java:4579)
+	at org.codehaus.janino.UnitCompiler$15.visitLvalue(UnitCompiler.java:4575)
+	at org.codehaus.janino.Java$Lvalue.accept(Java.java:4528)
+	at org.codehaus.janino.UnitCompiler.compileContext(UnitCompiler.java:4575)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:4098)
+	at org.codehaus.janino.UnitCompiler.access$6300(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$13.visitAssignment(UnitCompiler.java:4057)
+	at org.codehaus.janino.UnitCompiler$13.visitAssignment(UnitCompiler.java:4040)
+	at org.codehaus.janino.Java$Assignment.accept(Java.java:4864)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:4040)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:2523)
+	at org.codehaus.janino.UnitCompiler.access$1800(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$6.visitExpressionStatement(UnitCompiler.java:1580)
+	at org.codehaus.janino.UnitCompiler$6.visitExpressionStatement(UnitCompiler.java:1575)
+	at org.codehaus.janino.Java$ExpressionStatement.accept(Java.java:3209)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:1575)
+	at org.codehaus.janino.UnitCompiler.compileStatements(UnitCompiler.java:1661)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:1646)
+	at org.codehaus.janino.UnitCompiler.access$1700(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$6.visitBlock(UnitCompiler.java:1579)
+	at org.codehaus.janino.UnitCompiler$6.visitBlock(UnitCompiler.java:1575)
+	at org.codehaus.janino.Java$Block.accept(Java.java:3115)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:1575)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:2630)
+	at org.codehaus.janino.UnitCompiler.access$1900(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$6.visitIfStatement(UnitCompiler.java:1581)
+	at org.codehaus.janino.UnitCompiler$6.visitIfStatement(UnitCompiler.java:1575)
+	at org.codehaus.janino.Java$IfStatement.accept(Java.java:3284)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:1575)
+	at org.codehaus.janino.UnitCompiler.compileStatements(UnitCompiler.java:1661)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:3658)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:3329)
+	at org.codehaus.janino.UnitCompiler.compileDeclaredMethods(UnitCompiler.java:1447)
+	at org.codehaus.janino.UnitCompiler.compileDeclaredMethods(UnitCompiler.java:1420)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:829)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:1026)
+	at org.codehaus.janino.UnitCompiler.access$700(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$3.visitMemberClassDeclaration(UnitCompiler.java:425)
+	at org.codehaus.janino.UnitCompiler$3.visitMemberClassDeclaration(UnitCompiler.java:418)
+	at org.codehaus.janino.Java$MemberClassDeclaration.accept(Java.java:1533)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:418)
+	at org.codehaus.janino.UnitCompiler.compileDeclaredMemberTypes(UnitCompiler.java:1397)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:864)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:442)
+	at org.codehaus.janino.UnitCompiler.access$400(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$3.visitPackageMemberClassDeclaration(UnitCompiler.java:422)
+	at org.codehaus.janino.UnitCompiler$3.visitPackageMemberClassDeclaration(UnitCompiler.java:418)
+	at org.codehaus.janino.Java$PackageMemberClassDeclaration.accept(Java.java:1688)
+	at org.codehaus.janino.UnitCompiler.compile(UnitCompiler.java:418)
+	at org.codehaus.janino.UnitCompiler.compile2(UnitCompiler.java:392)
+	at org.codehaus.janino.UnitCompiler.access$000(UnitCompiler.java:236)
+	at org.codehaus.janino.UnitCompiler$2.visitCompilationUnit(UnitCompiler.java:363)
+	at org.codehaus.janino.UnitCompiler$2.visitCompilationUnit(UnitCompiler.java:361)
+	at org.codehaus.janino.Java$CompilationUnit.accept(Java.java:371)
+	at org.codehaus.janino.UnitCompiler.compileUnit(UnitCompiler.java:361)
+	at org.codehaus.janino.SimpleCompiler.cook(SimpleCompiler.java:264)
+	at org.codehaus.janino.ClassBodyEvaluator.cook(ClassBodyEvaluator.java:294)
+	at org.codehaus.janino.ClassBodyEvaluator.cook(ClassBodyEvaluator.java:288)
+	at org.codehaus.janino.ClassBodyEvaluator.cook(ClassBodyEvaluator.java:267)
+	at org.codehaus.commons.compiler.Cookable.cook(Cookable.java:82)
+	at org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator$.doCompile(CodeGenerator.scala:1497)
+	at org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator$.$anonfun$cache$1(CodeGenerator.scala:1589)
+	at org.apache.spark.util.NonFateSharingCache$$anon$1.load(NonFateSharingCache.scala:68)
+	at org.sparkproject.guava.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at org.sparkproject.guava.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at org.sparkproject.guava.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at org.sparkproject.guava.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	at org.sparkproject.guava.cache.LocalCache.get(LocalCache.java:4000)
+	at org.sparkproject.guava.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at org.sparkproject.guava.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at org.apache.spark.util.NonFateSharingLoadingCache.$anonfun$get$2(NonFateSharingCache.scala:94)
+	at org.apache.spark.util.KeyLock.withLock(KeyLock.scala:64)
+	at org.apache.spark.util.NonFateSharingLoadingCache.get(NonFateSharingCache.scala:94)
+	at org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator$.compile(CodeGenerator.scala:1444)
+	at org.apache.spark.sql.catalyst.expressions.codegen.GenerateMutableProjection$.create(GenerateMutableProjection.scala:148)
+	at org.apache.spark.sql.catalyst.expressions.codegen.GenerateMutableProjection$.generate(GenerateMutableProjection.scala:49)
+	at org.apache.spark.sql.catalyst.expressions.MutableProjection$.createCodeGeneratedObject(Projection.scala:85)
+	at org.apache.spark.sql.catalyst.expressions.MutableProjection$.createCodeGeneratedObject(Projection.scala:81)
+	at org.apache.spark.sql.catalyst.expressions.CodeGeneratorWithInterpretedFallback.createObject(CodeGeneratorWithInterpretedFallback.scala:50)
+	at org.apache.spark.sql.catalyst.expressions.MutableProjection$.create(Projection.scala:96)
+	at org.apache.spark.sql.catalyst.expressions.MutableProjection$.create(Projection.scala:104)
+	at org.apache.spark.sql.execution.aggregate.HashAggregateExec.$anonfun$doExecute$2(HashAggregateExec.scala:115)
+	at org.apache.spark.sql.execution.aggregate.AggregationIterator.generateProcessRow(AggregationIterator.scala:206)
+	at org.apache.spark.sql.execution.aggregate.AggregationIterator.<init>(AggregationIterator.scala:225)
+	at org.apache.spark.sql.execution.aggregate.TungstenAggregationIterator.<init>(TungstenAggregationIterator.scala:106)
+	at org.apache.spark.sql.execution.aggregate.HashAggregateExec.$anonfun$doExecute$1(HashAggregateExec.scala:123)
+	at org.apache.spark.sql.execution.aggregate.HashAggregateExec.$anonfun$doExecute$1$adapted(HashAggregateExec.scala:97)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsWithIndex$2(RDD.scala:907)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsWithIndex$2$adapted(RDD.scala:907)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+24/07/09 22:53:15 INFO CodeGenerator:
+/* 001 */ public java.lang.Object generate(Object[] references) {
+/* 002 */   return new SpecificMutableProjection(references);
+/* 003 */ }
+/* 004 */
+/* 005 */ class SpecificMutableProjection extends org.apache.spark.sql.catalyst.expressions.codegen.BaseMutableProjection {
+/* 006 */
+/* 007 */   private Object[] references;
+/* 008 */   private InternalRow mutableRow;
+/* 009 */   private boolean globalIsNull_0;
+/* 010 */   private boolean isNull_3_0;
+/* 011 */   private long value_13;
+/* 012 */   private double value_14;
+/* 013 */   private boolean isNull_12;
+/* 014 */
+/* 015 */   public SpecificMutableProjection(Object[] references) {
+/* 016 */     this.references = references;
+/* 017 */     mutableRow = new org.apache.spark.sql.catalyst.expressions.GenericInternalRow(2);
+/* 018 */
+/* 019 */
+/* 020 */   }
+/* 021 */
+/* 022 */   public void initialize(int partitionIndex) {
+/* 023 */
+/* 024 */   }
+/* 025 */
+/* 026 */   public org.apache.spark.sql.catalyst.expressions.codegen.BaseMutableProjection target(InternalRow row) {
+/* 027 */     mutableRow = row;
+/* 028 */     return this;
+/* 029 */   }
+/* 030 */
+/* 031 */   /* Provide immutable access to the last projected row. */
+/* 032 */   public InternalRow currentValue() {
+/* 033 */     return (InternalRow) mutableRow;
+/* 034 */   }
+/* 035 */
+/* 036 */   public java.lang.Object apply(java.lang.Object _i) {
+/* 037 */     InternalRow i = (InternalRow) _i;
+/* 038 */
+/* 039 */
+/* 040 */     long value_1 = i.getLong(0);
+/* 041 */
+/* 042 */     long value_0 = -1L;
+/* 043 */
+/* 044 */     value_0 = value_1 + 1L;
+/* 045 */     value_13 = value_0;
+/* 046 */
+/* 047 */     isNull_3_0 = true;
+/* 048 */     double value_3 = -1.0;
+/* 049 */
+/* 050 */     boolean isNull_4 = i.isNullAt(1);
+/* 051 */     double value_4 = isNull_4 ?
+/* 052 */     -1.0 : (i.getDouble(1));
+/* 053 */
+/* 054 */     if (!isNull_4 && (isNull_3_0 ||
+/* 055 */         (org.apache.spark.sql.catalyst.util.SQLOrderingUtil.compareDoubles(value_4, value_3)) > 0)) {
+/* 056 */       isNull_3_0 = false;
+/* 057 */       value_3 = value_4;
+/* 058 */     }
+/* 059 */
+/* 060 */
+/* 061 */     double value_12 = Cast_0(i);
+/* 062 */
+/* 063 */     if (!globalIsNull_0 && (isNull_3_0 ||
+/* 064 */         (org.apache.spark.sql.catalyst.util.SQLOrderingUtil.compareDoubles(value_12, value_3)) > 0)) {
+/* 065 */       isNull_3_0 = false;
+/* 066 */       value_3 = value_12;
+/* 067 */     }
+/* 068 */     isNull_12 = isNull_3_0;
+/* 069 */     value_14 = value_3;
+/* 070 */
+/* 071 */     // copy all the results into MutableRow
+/* 072 */     mutableRow.setLong(0, value_13);
+/* 073 */     if (!isNull_12) {
+/* 074 */       mutableRow.setDouble(1, value_14);
+/* 075 */     } else {
+/* 076 */       mutableRow.setNullAt(1);
+/* 077 */     }
+/* 078 */
+/* 079 */     return mutableRow;
+/* 080 */   }
+/* 081 */
+/* 082 */
+/* 083 */   private double Cast_0(InternalRow i) {
+/* 084 */     ArrayData arrayData_0 = ArrayData.allocateArrayData(
+/* 085 */       -1, 2L, " createArray failed.");
+/* 086 */
+/* 087 */
+/* 088 */     arrayData_0.update(0, ((UTF8String) references[0] /* literal */));
+/* 089 */
+/* 090 */     double value_10 = i.getDouble(2);
+/* 091 */     boolean isNull_9 = false;
+/* 092 */     UTF8String value_9 = null;
+/* 093 */     if (!false) {
+/* 094 */       value_9 = UTF8String.fromString(String.valueOf(value_10));
+/* 095 */     }
+/* 096 */     arrayData_0.update(1, value_9);
+/* 097 */
+/* 098 */     UTF8String value_6 = null;
+/* 099 */
+/* 100 */     int elementAtIndex_0 = (int) 2;
+/* 101 */     if (arrayData_0.numElements() < Math.abs(elementAtIndex_0)) {
+/* 102 */       isNull_6 = true;
+/* 103 */     } else {
+/* 104 */       if (elementAtIndex_0 == 0) {
+/* 105 */         throw QueryExecutionErrors.invalidIndexOfZeroError(null);
+/* 106 */       } else if (elementAtIndex_0 > 0) {
+/* 107 */         elementAtIndex_0--;
+/* 108 */       } else {
+/* 109 */         elementAtIndex_0 += arrayData_0.numElements();
+/* 110 */       }
+/* 111 */
+/* 112 */       {
+/* 113 */         value_6 = arrayData_0.getUTF8String(elementAtIndex_0);
+/* 114 */       }
+/* 115 */     }
+/* 116 */     boolean isNull_5 = false;
+/* 117 */     double value_5 = -1.0;
+/* 118 */     if (!false) {
+/* 119 */       final String doubleStr_0 = value_6.toString();
+/* 120 */       try {
+/* 121 */         value_5 = Double.valueOf(doubleStr_0);
+/* 122 */       } catch (java.lang.NumberFormatException e) {
+/* 123 */         final Double d = (Double) Cast.processFloatingPointSpecialLiterals(doubleStr_0, false);
+/* 124 */         if (d == null) {
+/* 125 */           isNull_5 = true;
+/* 126 */         } else {
+/* 127 */           value_5 = d.doubleValue();
+/* 128 */         }
+/* 129 */       }
+/* 130 */     }
+/* 131 */     globalIsNull_0 = isNull_5;
+/* 132 */     return value_5;
+/* 133 */   }
+/* 134 */
+/* 135 */ }
+
+24/07/09 22:53:15 WARN MutableProjection: Expr codegen error and falling back to interpreter mode
+java.util.concurrent.ExecutionException: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 102, Column 1: failed to compile: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 102, Column 1: Expression "isNull_6" is not an rvalue
+	at org.sparkproject.guava.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+	at org.sparkproject.guava.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:293)
+	at org.sparkproject.guava.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at org.sparkproject.guava.util.concurrent.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:135)
+	at org.sparkproject.guava.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2410)
+	at org.sparkproject.guava.cache.LocalCache$Segment.loadSync(LocalCache.java:2380)
+	at org.sparkproject.guava.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at org.sparkproject.guava.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	at org.sparkproject.guava.cache.LocalCache.get(LocalCache.java:4000)
+	at org.sparkproject.guava.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at org.sparkproject.guava.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at org.apache.spark.util.NonFateSharingLoadingCache.$anonfun$get$2(NonFateSharingCache.scala:94)
+	at org.apache.spark.util.KeyLock.withLock(KeyLock.scala:64)
+	at org.apache.spark.util.NonFateSharingLoadingCache.get(NonFateSharingCache.scala:94)
+	at org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator$.compile(CodeGenerator.scala:1444)
+	at org.apache.spark.sql.catalyst.expressions.codegen.GenerateMutableProjection$.create(GenerateMutableProjection.scala:148)
+	at org.apache.spark.sql.catalyst.expressions.codegen.GenerateMutableProjection$.generate(GenerateMutableProjection.scala:49)
+	at org.apache.spark.sql.catalyst.expressions.MutableProjection$.createCodeGeneratedObject(Projection.scala:85)
+	at org.apache.spark.sql.catalyst.expressions.MutableProjection$.createCodeGeneratedObject(Projection.scala:81)
+	at org.apache.spark.sql.catalyst.expressions.CodeGeneratorWithInterpretedFallback.createObject(CodeGeneratorWithInterpretedFallback.scala:50)
+	at org.apache.spark.sql.catalyst.expressions.MutableProjection$.create(Projection.scala:96)
+	at org.apache.spark.sql.catalyst.expressions.MutableProjection$.create(Projection.scala:104)
+	at org.apache.spark.sql.execution.aggregate.HashAggregateExec.$anonfun$doExecute$2(HashAggregateExec.scala:115)
+	at org.apache.spark.sql.execution.aggregate.AggregationIterator.generateProcessRow(AggregationIterator.scala:206)
+	at org.apache.spark.sql.execution.aggregate.AggregationIterator.<init>(AggregationIterator.scala:225)
+	at org.apache.spark.sql.execution.aggregate.TungstenAggregationIterator.<init>(TungstenAggregationIterator.scala:106)
+	at org.apache.spark.sql.execution.aggregate.HashAggregateExec.$anonfun$doExecute$1(HashAggregateExec.scala:123)
+	at org.apache.spark.sql.execution.aggregate.HashAggregateExec.$anonfun$doExecute$1$adapted(HashAggregateExec.scala:97)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsWithIndex$2(RDD.scala:907)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsWithIndex$2$adapted(RDD.scala:907)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:364)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:328)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 102, Column 1: failed to compile: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 102, Column 1: Expression "isNull_6" is not an rvalue
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.compilerError(QueryExecutionErrors.scala:663)
+	at org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator$.doCompile(CodeGenerator.scala:1509)
+	at org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator$.$anonfun$cache$1(CodeGenerator.scala:1589)
+	at org.apache.spark.util.NonFateSharingCache$$anon$1.load(NonFateSharingCache.scala:68)
+	at org.sparkproject.guava.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at org.sparkproject.guava.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	... 43 more
+24/07/09 22:53:15 INFO CodeGenerator: Code generated in 1.899042 ms
+24/07/09 22:53:15 INFO CodeGenerator: Code generated in 2.586417 ms
+24/07/09 22:53:15 INFO CodeGenerator: Code generated in 2.327167 ms
+24/07/09 22:53:15 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 2259 bytes result sent to driver
+24/07/09 22:53:15 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 77 ms on 192-168-1-168.tpgi.com.au (executor driver) (1/1)
+24/07/09 22:53:15 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool
+24/07/09 22:53:15 INFO DAGScheduler: ShuffleMapStage 2 (collect at AnalysisRunner.scala:327) finished in 0.085 s
+24/07/09 22:53:15 INFO DAGScheduler: looking for newly runnable stages
+24/07/09 22:53:15 INFO DAGScheduler: running: Set()
+24/07/09 22:53:15 INFO DAGScheduler: waiting: Set()
+24/07/09 22:53:15 INFO DAGScheduler: failed: Set()
+24/07/09 22:53:15 INFO CodeGenerator: Code generated in 4.675333 ms
+24/07/09 22:53:15 INFO SparkContext: Starting job: collect at AnalysisRunner.scala:327
+24/07/09 22:53:15 INFO DAGScheduler: Got job 3 (collect at AnalysisRunner.scala:327) with 1 output partitions
+24/07/09 22:53:15 INFO DAGScheduler: Final stage: ResultStage 4 (collect at AnalysisRunner.scala:327)
+24/07/09 22:53:15 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 3)
+24/07/09 22:53:15 INFO DAGScheduler: Missing parents: List()
+24/07/09 22:53:15 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[19] at collect at AnalysisRunner.scala:327), which has no missing parents
+24/07/09 22:53:15 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 13.7 KiB, free 3.4 GiB)
+24/07/09 22:53:15 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 6.3 KiB, free 3.4 GiB)
+24/07/09 22:53:15 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 192-168-1-168.tpgi.com.au:61700 (size: 6.3 KiB, free: 3.4 GiB)
+24/07/09 22:53:15 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 192-168-1-168.tpgi.com.au:61700 in memory (size: 13.4 KiB, free: 3.4 GiB)
+24/07/09 22:53:15 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1580
+24/07/09 22:53:15 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[19] at collect at AnalysisRunner.scala:327) (first 15 tasks are for partitions Vector(0))
+24/07/09 22:53:15 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks resource profile 0
+24/07/09 22:53:15 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 3) (192-168-1-168.tpgi.com.au, executor driver, partition 0, NODE_LOCAL, 7615 bytes)
+24/07/09 22:53:15 INFO Executor: Running task 0.0 in stage 4.0 (TID 3)
+24/07/09 22:53:15 INFO ShuffleBlockFetcherIterator: Getting 1 (66.0 B) non-empty blocks including 1 (66.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+24/07/09 22:53:15 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 3 ms
+24/07/09 22:53:15 INFO CodeGenerator: Code generated in 4.960709 ms
+24/07/09 22:53:15 INFO Executor: Finished task 0.0 in stage 4.0 (TID 3). 4039 bytes result sent to driver
+24/07/09 22:53:15 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 3) in 36 ms on 192-168-1-168.tpgi.com.au (executor driver) (1/1)
+24/07/09 22:53:15 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool
+24/07/09 22:53:15 INFO DAGScheduler: ResultStage 4 (collect at AnalysisRunner.scala:327) finished in 0.044 s
+24/07/09 22:53:15 INFO DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+24/07/09 22:53:15 INFO TaskSchedulerImpl: Killing all running tasks in stage 4: Stage finished
+24/07/09 22:53:15 INFO DAGScheduler: Job 3 finished: collect at AnalysisRunner.scala:327, took 0.046681 s
+24/07/09 22:53:15 INFO CodeGenerator: Code generated in 2.922 ms
+24/07/09 22:53:15 INFO SparkContext: SparkContext is stopping with exitCode 0.
+24/07/09 22:53:15 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/07/09 22:53:15 INFO MemoryStore: MemoryStore cleared
+24/07/09 22:53:15 INFO BlockManager: BlockManager stopped
+24/07/09 22:53:15 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/07/09 22:53:15 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/07/09 22:53:15 INFO SparkContext: Successfully stopped SparkContext
+24/07/09 22:53:15 INFO ShutdownHookManager: Shutdown hook called
+24/07/09 22:53:15 INFO ShutdownHookManager: Deleting directory /private/var/folders/5h/vkqskygs6xqgldrbd4nfgzjc0000gn/T/spark-bfc70d4b-7c6b-4a80-9edf-3a10be42bc59
+We found errors in the data, the following constraints were not satisfied:
+
+SizeConstraint(Size(None)) failed: Value: 5 does not meet the constraint requirement!
+MaximumConstraint(Maximum(numViews,None,None)) failed: Value: 10.0 does not meet the constraint requirement!
+kllSketchConstraint(KLLSketch(numViews,Some(KLLParameters(2,0.64,2)))) failed: Value: BucketDistribution(List(BucketValue(0.0,5.0,2), BucketValue(5.0,10.0,3)),List(0.64, 2.0),[[D@3db145f7) does not meet the constraint requirement!
+Hello there!
+
+BUILD SUCCESSFUL in 3s
+4 actionable tasks: 1 executed, 3 up-to-date
+10:53:15 pm: Execution finished 'run'.

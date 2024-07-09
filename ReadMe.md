@@ -51,7 +51,7 @@ When it starts it will print out the important versions:
 > Task :app:run
 
 ----------------------------------------------
-Java version: 1.8.0_412
+Java version: 21.0.3
 Kotlin version: 2.0.0
 Scala version: version 2.12.18
 ----------------------------------------------
@@ -63,10 +63,8 @@ Scala version: version 2.12.18
 
 Notes:
 
-- Gradle is configured to use java 8 with `languageVersion = JavaLanguageVersion.of(8)` - any other newer version results in an error - for example if using Java 21 I get the error: 
-```
-> Task :lib:compileScala FAILED
-'jvm-1.21' is not a valid choice for '-target'
-bad option: '-target:jvm-1.21'
-```
 - Spark and Scala dependencies are inherited from Deequ.
+- I see an error in the logs which don't seem to harm anything but need looking into
+```
+  Caused by: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 102, Column 1: failed to compile: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 102, Column 1: Expression "isNull_6" is not an rvalue
+``` 
