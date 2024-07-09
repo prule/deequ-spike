@@ -58,7 +58,6 @@ Scala version: version 2.12.18
 ...
 24/07/09 22:16:16 INFO SparkContext: Running Spark version 3.5.0
 24/07/09 22:16:16 INFO SparkContext: OS info Mac OS X, 14.5, aarch64
-24/07/09 22:16:16 INFO SparkContext: Java version 1.8.0_412
 ```
 
 Notes:
