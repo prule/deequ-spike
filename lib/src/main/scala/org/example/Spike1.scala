@@ -14,6 +14,7 @@ class Spike1 {
     println("Hello there!")
   }
 
+  // taken from https://github.com/awslabs/deequ/blob/master/src/main/scala/com/amazon/deequ/examples/KLLCheckExample.scala
   ExampleUtils.withSpark { session =>
     println(s"Spark version: ${session.version}")
 

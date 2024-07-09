@@ -2,6 +2,8 @@ package org.example
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
+// taken from https://github.com/awslabs/deequ/blob/master/src/main/scala/com/amazon/deequ/examples/ExampleUtils.scala
+
 /**
  * Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
