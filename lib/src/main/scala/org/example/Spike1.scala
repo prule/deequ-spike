@@ -32,12 +32,15 @@ class Spike1 {
         .addCheck(
           Check(CheckLevel.Error, "integrity checks")
             // we expect 5 records
-            .hasSize(_ == 5)
+            .hasSize(_ == 6)
             // we expect the maximum of tips to be not more than 10
-            .hasMax("numViews", _ <= 10)
+            .hasMax("numViews", _ <= 9)
         ).run()
 
-//      The data passed the test, everything is fine!
+//      We found errors in the data, the following constraints were not satisfied:
+//
+//      SizeConstraint(Size(None)) failed: Value: 5 does not meet the constraint requirement!
+//      MaximumConstraint(Maximum(numViews,None,None)) failed: Value: 10.0 does not meet the constraint requirement!
 
       if (verificationResult.status == CheckStatus.Success) {
         println("The data passed the test, everything is fine!")
