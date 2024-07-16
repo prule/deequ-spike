@@ -60,6 +60,21 @@ Scala version: version 2.12.18
 24/07/09 22:16:16 INFO SparkContext: OS info Mac OS X, 14.5, aarch64
 ```
 
+Running the application will execute the Scala Deequ code, and produce output on the console such as:
+
+```
+We found errors in the data, the following constraints were not satisfied:
+
+SizeConstraint(Size(None)) failed: Value: 5 does not meet the constraint requirement!
+MaximumConstraint(Maximum(numViews,None,None)) failed: Value: 10.0 does not meet the constraint requirement!
+kllSketchConstraint(KLLSketch(numViews,Some(KLLParameters(2,0.64,2)))) failed: Value: BucketDistribution(List(BucketValue(0.0,5.0,2), BucketValue(5.0,10.0,3)),List(0.64, 2.0),[[D@38241615) does not meet the constraint requirement!
+```
+
+The Deequ code can then be experimented with in order to see how it works.
+See https://github.com/awslabs/deequ/tree/master/src/main/scala/com/amazon/deequ/examples for more examples.
+
+----
+
 Notes:
 
 - Spark and Scala dependencies are inherited from Deequ.
