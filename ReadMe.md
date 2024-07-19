@@ -60,14 +60,69 @@ Scala version: version 2.12.18
 24/07/09 22:16:16 INFO SparkContext: OS info Mac OS X, 14.5, aarch64
 ```
 
-Running the application will execute the Scala Deequ code, and produce output on the console such as:
+Running the application will execute the Scala Deequ code.
+Here, I'm using one of the [examples](https://github.com/awslabs/deequ/blob/master/src/main/scala/com/amazon/deequ/examples/KLLCheckExample.scala) provided in the Deequ repository as a basis for a starting point.
 
+With verification rules which are satisfied by the data:
+```
+val verificationResult = VerificationSuite()
+  .onData(newData)
+  .addCheck(
+    Check(CheckLevel.Error, "integrity checks")
+      // we expect 5 records
+      .hasSize(_ == 6)
+      // we expect the maximum of tips to be not more than 10
+      .hasMax("numViews", _ <= 8)
+      // we expect the sketch size to be at least 16
+      .kllSketchSatisfies("numViews", _.parameters(1) >= 16,
+        kllParameters = Option(KLLParameters(2, 0.64, 2)))
+  )
+  .run()
+```
+we will see success:
+```
+The data passed the test, everything is fine!
+```
+
+If we change the verification so the data violates the rules:
+```
+  val verificationResult = VerificationSuite()
+    .onData(newData)
+    .addCheck(
+      Check(CheckLevel.Error, "integrity checks")
+        // we expect 5 records
+        .hasSize(_ == 6)
+        // we expect the maximum of tips to be not more than 10
+        .hasMax("numViews", _ <= 9)
+    ).run()
+```
+We'll see corresponding output:
 ```
 We found errors in the data, the following constraints were not satisfied:
 
 SizeConstraint(Size(None)) failed: Value: 5 does not meet the constraint requirement!
 MaximumConstraint(Maximum(numViews,None,None)) failed: Value: 10.0 does not meet the constraint requirement!
-kllSketchConstraint(KLLSketch(numViews,Some(KLLParameters(2,0.64,2)))) failed: Value: BucketDistribution(List(BucketValue(0.0,5.0,2), BucketValue(5.0,10.0,3)),List(0.64, 2.0),[[D@38241615) does not meet the constraint requirement!
+```
+
+How we handle the verification results is up to us:
+
+```
+  if (verificationResult.status == CheckStatus.Success) {
+    println("The data passed the test, everything is fine!")
+  } else {
+    println("We found errors in the data, the following constraints were not satisfied:\n")
+
+    val resultsForAllConstraints = verificationResult.checkResults
+      .flatMap { case (_, checkResult) => checkResult.constraintResults }
+
+    resultsForAllConstraints
+      .filter {
+        _.status != ConstraintStatus.Success
+      }
+      .foreach { result =>
+        println(s"${result.constraint} failed: ${result.message.get}")
+      }
+  }
 ```
 
 The Deequ code can then be experimented with in order to see how it works.
@@ -78,7 +133,7 @@ See https://github.com/awslabs/deequ/tree/master/src/main/scala/com/amazon/deequ
 Notes:
 
 - Spark and Scala dependencies are inherited from Deequ.
-- I see an error in the logs which don't seem to harm anything but need looking into
+- I see an error in the logs which don't seem to harm anything but needs looking into
 ```
   Caused by: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 102, Column 1: failed to compile: org.codehaus.commons.compiler.CompileException: File 'generated.java', Line 102, Column 1: Expression "isNull_6" is not an rvalue
 ``` 
